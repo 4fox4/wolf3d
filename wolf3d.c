@@ -6,7 +6,7 @@
 /*   By: houlekhi <houlekhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/18 13:48:31 by houlekhi          #+#    #+#             */
-/*   Updated: 2015/06/11 16:45:13 by houlekhi         ###   ########.fr       */
+/*   Updated: 2016/08/22 20:37:12 by houlekhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int			main(void)
 		error("Give me an valid environment");
 	e.tab = get_first_level("map_test", &e);
 	e.window = mlx_new_window(e.mlx, W, H, "wolf3d");
-	system("afplay wolf_sound.mp3 &");
 	ft_init(&e);
 	raycaster(&e);
 	mlx_expose_hook(e.window, expose_hook, &e);
